@@ -1,0 +1,83 @@
+// *PUT ANY LIBRARY FILES HERE*
+
+
+void setup()
+{
+    // Code to run ONLY ONCE goes here
+    
+    //Initialize the serial port @ 9600 (for fps)
+    Serial.begin(9600);
+    
+    //display messages on the classical serial teminal - DEBUG
+    fps.UseSerialDebug = true; 
+    fps.Open();
+    
+    //call enroll to add the first fingerprint
+    enroll();
+    
+    //Initial WiFi Setup/select initial network
+      // Enter network
+      //Enter password
+}
+
+
+
+void enroll()
+{
+  //take in the very first fingerprint
+
+}
+
+  // Enroll the first fingerprint in the 1st enrollid location
+
+
+void loop()
+{
+
+  // Wait for one of the conditions: Finger pressed, schedule alert
+  
+      //If a finger is pressed
+      
+        // Unlock the container / operate servo / send notification
+        // SERVO CODE GOES HERE
+        
+        // Wait for second finger press
+        
+          // Lock container & Send notification
+          // SERVO CODE HERE
+            // Return to loop once closed
+          
+  // Schedule alert
+  
+      // Send notification to caretaker/user
+      // return to the loop to wait for a fingerprint or app access
+      
+    // App access (MUST BE PART OF MAIN LOOP OR NOTIFICATIONS WILL NOT BE SENT DURING THIS CYCLE!!!)
+      
+        //Enroll other fingerprints
+      
+          //Requst finger scan or user pin
+        
+            //Scan new finger
+          
+             //Enroll new finger
+            
+      // Delete fingerprints
+      
+        // Request finger scan or user pin
+        
+          // Delete finger
+      
+        //Change network settings/add network
+      
+         // Request Network ID & passcode
+        
+         // Delete networks
+        
+           // Request user pin or finger
+          
+               // select network to remove
+      
+        // Unlock (I'd prefer not to put this in the app!!)
+     
+}
